@@ -1,0 +1,71 @@
+// Interface para o Reprodutor Musical
+interface ReprodutorMusical {
+    void tocar();
+    void pausar();
+    void selecionarMusica(String musica);
+}
+
+// Interface para o Aparelho Telefônico
+interface AparelhoTelefonico {
+    void ligar();
+    void atender();
+    void iniciarCorreioVoz();
+}
+
+// Interface para o Navegador na Internet
+interface NavegadorInternet {
+    void exibirPagina(String url);
+    void adicionarNovaAba(String url);
+    void atualizarPagina();
+}
+
+// Classe que representa o iPhone, implementando as interfaces
+class iPhone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
+    // Implementações dos métodos das interfaces ReprodutorMusical, AparelhoTelefonico, NavegadorInternet
+    
+    public void tocar() {
+        // Lógica para tocar música
+    }
+    
+    public void pausar() {
+        // Lógica para pausar música
+    }
+    
+    public void selecionarMusica(String musica) {
+        // Lógica para selecionar uma música
+    }
+    
+    public void ligar() {
+        // Lógica para ligar o telefone
+    }
+    
+    public void atender() {
+        // Lógica para atender uma chamada
+    }
+    
+    public void iniciarCorreioVoz() {
+        // Lógica para iniciar o correio de voz
+    }
+    
+    public void exibirPagina(String url) {
+        // Lógica para exibir uma página da internet
+    }
+    
+    public void adicionarNovaAba(String url) {
+        // Lógica para adicionar uma nova aba no navegador
+    }
+    
+    public void atualizarPagina() {
+        // Lógica para atualizar a página exibida no navegador
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Exemplo de uso do iPhone
+        iPhone meuIPhone = new iPhone();
+        meuIPhone.tocar();
+        meuIPhone.exibirPagina("https://www.example.com");
+        meuIPhone.ligar();
+    }
+}
